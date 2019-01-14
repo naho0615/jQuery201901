@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>グリーティングカードメーカー</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+    
+    <div class="bg">
+        <div class="content">
+            <h1>グリーティングカードメーカー</h1>
+            <p>タイトル1行目</p>
+            <input type="text" maxlength='10' class="input_title title1" placeholder="HAPPY">
+            <p>タイトル2行目</p>
+            <input type="text" maxlength='10' class="input_title title2" placeholder="HOLIDAYS!">
+            <p>写真の種類</p>
+            <input type="radio" name="photo" value="cat" checked>猫
+            <input type="radio" name="photo" value="cake">ケーキ
+            <input type="radio" name="photo" value="cityscape">街並み
+            <input type="radio" name="photo" value="ferris_wheel">観覧車
+            <input type="radio" name="photo" value="cherry_blossoms">桜
+            <input type="radio" name="photo" value="old_book">羊皮紙
+
+            <input type="button" class="btn btn_open" value="CLICK">
+        </div>
+        
+        <div class="modal_overlay"></div>
+        <div class="modal">
+            <div class="modal_innner">
+                <p class="before_text">TO OUR FRIENDS AND LOVED ONES</p>
+                <div class="modal_text_field">
+                    <p class="display_title1"></p>
+                    <p class="display_title2"></p>
+                </div>
+            </div>
+            
+            <img class="display_photo" src="img/old_book.jpg">
+        </div>
+    </div>
+
+    <!-- jQueryを読み込む -->
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+
+    <!-- 自分で用意したjsファイルを読み込む -->
+    <script src="js/index.js"></script>
+
+    <!-- 石川が独自に作ったモーダルの位置合わせjsも読み込んどく -->
+    <script src="js/moveCenter.js"></script>
+</body>
+</html>
